@@ -211,14 +211,13 @@ namespace LoopsPractice
             //1 2 
             //1 2 3
             //1 2 3 4
-
-            for (int a = 0; a <= 4; a++)
+            int n = int.Parse(Console.ReadLine());
+            for (int a = 1; a <= n; a++)
             {
-                Console.Write(a);
-
-                for (int b = 1; b < a; b++)
+              
+                for (int b = 1; b <= a; b++)
                 {
-                    Console.Write(b);
+                    Console.Write(b + " ");
                 }
                 Console.WriteLine();
             }
