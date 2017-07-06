@@ -211,7 +211,8 @@ namespace LoopsPractice
             //1 2 
             //1 2 3
             //1 2 3 4
-            int n = int.Parse(Console.ReadLine());
+
+            /*int n = int.Parse(Console.ReadLine());
             for (int a = 1; a <= n; a++)
             {
               
@@ -220,7 +221,51 @@ namespace LoopsPractice
                     Console.Write(b + " ");
                 }
                 Console.WriteLine();
+            }*/
+
+            //practice problem
+
+            //Write an app that prints hello world 10X
+
+            /*for(int i = 0; i < 10; i++)
+            {
+                Console.WriteLine("Hello World.");
+            }*/
+
+            //Write an app that prints 1-100
+
+            /*for(int i = 1; i <= 100; i++)
+            {
+                Console.WriteLine(i);
+            }*/
+
+            /*string words = "I love food";
+            
+            foreach(char word in words)
+            {
+                Console.WriteLine(word);
+                Console.WriteLine();
+            }*/
+            /*int vowelCount = 0;
+            Console.WriteLine("Enter a word or phrase");
+            string phrase = Console.ReadLine().ToLower();
+            foreach(char letters in phrase)
+            { 
+                if(letters == 'a' || letters == 'e'|| letters == 'i'|| letters == 'o'|| letters == 'u')
+                    vowelCount += 1;
             }
+            Console.WriteLine(vowelCount);*/
+
+            Console.WriteLine("Enter a number");
+            int n = int.Parse(Console.ReadLine());
+            Console.WriteLine("How many times should it be repeated?");
+            int r = int.Parse(Console.ReadLine());
+
+            for(int i = 0; i < r; i ++)
+            {
+                Console.WriteLine(n);
+            }
+
         }
     }
 }
