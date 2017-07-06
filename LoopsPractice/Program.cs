@@ -116,12 +116,111 @@ namespace LoopsPractice
             //While loop is run only if a condition is met, while something is true.
             //EX.  while(condition,
 
-            Console.WriteLine("What is your first name?");
+            /*Console.WriteLine("What is your first name?");
             string firstName = Console.ReadLine();
             while(firstName.ToUpper() == "MIKE")
             {
                 Console.WriteLine("Dude, you are amazing.");
                 break;
+            }*/
+
+            //second 
+            /*Console.WriteLine("Do you want to play the game? YES/NO");
+            string playAgain = Console.ReadLine().ToUpper();
+
+            while (playAgain == "YES")
+            {
+                Console.WriteLine("It's a rematch!");
+                Console.WriteLine("Do you want to play again?");
+                playAgain = Console.ReadLine();
+            }*/
+
+            //Do-while loops are similar to while loops, however a do-while loop
+            //is used when you want a chunk of code to run at LEAST ONCE, but repeat
+            //only if the while condition is met
+
+            //The structure of a do-while loop is:
+            //do
+            //{
+            //  Do something;
+            //}
+            //while(condition);
+
+            /*string playAgain;
+            do
+            {
+                Console.WriteLine("Welcome to my game? YES/NO");
+                //game code here
+                Console.WriteLine("Great game!!");
+                Console.WriteLine("Do you want to play again? YES/NO");
+                playAgain = Console.ReadLine().ToUpper();
+            } while (playAgain == "YES");*/
+
+            //Ask the user for the class in school that they would like to add to
+            //their GPA calculation.
+            //Ask them for the letter grade for the class (no or -)
+            //Ask them if they have another class they would like to add 
+            //to their GPA calculation.
+            //Using a Do-While loop, repeat the code if the user says "YES"
+            /*string userAnswer;
+            string userClass;
+            string userGrade;
+
+            Console.WriteLine("Would you like to add a grade to your GPA calculation?  YES/NO");
+            userAnswer = Console.ReadLine().ToUpper();
+            if (userAnswer == "YES")
+            {
+                do
+                {
+                    Console.WriteLine("What is the name of your class?");
+                    userClass = Console.ReadLine().ToUpper();
+                    Console.WriteLine("What is your letter grade for the class?  Please do not enter a '+' or '-'.");
+                    userGrade = Console.ReadLine().ToUpper();
+                    if (userGrade != "A" && userGrade != "B" && userGrade != "C" && userGrade != "D" && userGrade != "F")
+                    {
+
+                        Console.WriteLine("Please enter a grade A, B, C, D or F");
+                        userGrade = Console.ReadLine().ToUpper();
+                  
+                    }
+                    Console.WriteLine("Would you like to add a grade to your GPA calculation?  YES/NO");
+                    userAnswer = Console.ReadLine().ToUpper();
+                } while (userAnswer == "YES");
+            }*/
+
+            //Nested Loops
+            //Create a nested loop structure that prints:
+            //1234
+            //1234
+            //i is rows   and    j is columns
+
+            /*for(int i = 1; i <= 2; i++)
+            {
+                for(int j = 1; j <= 4; j++)
+                {
+                    Console.Write(j);
+                }
+                Console.WriteLine();
+            }*/
+
+            //Print a Triangle
+            //Outer loop will go line by line
+            //Inner loop will go over different elements in the line.
+            //Result:
+            //1
+            //1 2 
+            //1 2 3
+            //1 2 3 4
+
+            for (int a = 0; a <= 4; a++)
+            {
+                Console.Write(a);
+
+                for (int b = 1; b < a; b++)
+                {
+                    Console.Write(b);
+                }
+                Console.WriteLine();
             }
         }
     }
