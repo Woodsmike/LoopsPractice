@@ -65,12 +65,13 @@ namespace LoopsPractice
 
             //Add the product of 1 through 10 using a For Loop
             //print the product to the screen.
-            int product =1;
-            for(int i = 1; i < 11; i++)
-            {
-                product = (product * i);              
-                Console.WriteLine(product);
+            int product = 1;
+            for (int i = 1; i < 11; i++)
+            {                
+                product = product * i;                
             }
+            Console.WriteLine(product);
+
 
         }
     }
