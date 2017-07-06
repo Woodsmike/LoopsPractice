@@ -17,14 +17,22 @@ namespace LoopsPractice
             //keywords, break and continue
             //four types of loops {for loops, for each loops, while loops, do while loops}
 
-            //for loop   - both counting and Iterating through an array or other collection
+            //for loop   - both counting and/or Iterating through an array or other collection
             //type
             //for(initializer; condition, updater)
             //{
             //  do something
             //}
 
-            
+            //for(int i= 15; i > 0; i--)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            for (int i = 50; i <= 100; i++)
+            {
+                Console.WriteLine(i);
+            }
 
         }
     }
