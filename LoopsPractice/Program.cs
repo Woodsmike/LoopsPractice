@@ -54,24 +54,25 @@ namespace LoopsPractice
             //storyWords using the Split method. Reverse the order of the elements in
             //the array and using a For Loop, print each word.
 
+            /*string storyBeginning = "Once upon a time";
+            string[] storyWords = storyBeginning.Split();
+            for (int i = storyWords.Length - 1; i >= 0; i--)
+            {
+                Console.WriteLine(storyWords[i]);
+            }*/
+
+            //or
+            /*
             string storyBeginning = "Once upon a time";
             string[] storyWords = storyBeginning.Split();
-            /*Array.Reverse(storyWords);
+            Array.Reverse(storyWords);
 
             for(int i = 0; i < storyWords.Length; i++)
             {
                 Console.WriteLine(storyWords[i]);
             }
             
-            or
-            do not
-            Array.Reverse(storyWords);*/
-            for (int i = storyWords.Length - 1; i <= 0; i--)
-            {
-                Console.WriteLine(storyBeginning[i]);
-            }
-
-
+            
             //Add the product of 1 through 10 using a For Loop
             //print the product to the screen.
             /*int product = 1;
@@ -106,10 +107,21 @@ namespace LoopsPractice
             //Foreach loop will always go from beginning to end, no matter what
             //it counts the number of elements in the collection, and runs that many times
 
-            string[] groupOfMusicians = { "Adel", "ACDC", "U2", "REM", "21 Pilots", "Bach" };
+            /*string[] groupOfMusicians = { "Adel", "ACDC", "U2", "REM", "21 Pilots", "Bach" };
             foreach (string musicians in groupOfMusicians)
             {
                 Console.WriteLine(musicians);
+            }*/
+
+            //While loop is run only if a condition is met, while something is true.
+            //EX.  while(condition,
+
+            Console.WriteLine("What is your first name?");
+            string firstName = Console.ReadLine();
+            while(firstName.ToUpper() == "MIKE")
+            {
+                Console.WriteLine("Dude, you are amazing.");
+                break;
             }
         }
     }
