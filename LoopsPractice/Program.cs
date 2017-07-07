@@ -356,10 +356,14 @@ namespace LoopsPractice
 
             //Ramdom object
             Random randomNumber = new Random();
-            int randy = randomNumber.Next(0, 9);
+            //int randy = randomNumber.Next(0, 9);
             //or
-            Console.WriteLine(randomNumber.Next(0, 12));
+            //Console.WriteLine(randomNumber.Next(0, 12));
 
+            string[] word = { "Rock", "Paper", "Scissors" };
+            Console.WriteLine(word[randomNumber.Next(0, 3)]);
+            int[] numbers = { 1, 2, 3, 4, 5, 78, 73, 5 };
+            Console.WriteLine(numbers[randomNumber.Next(0, 9)]);
         }
     }
 }
