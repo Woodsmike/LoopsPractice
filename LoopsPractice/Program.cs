@@ -276,7 +276,7 @@ namespace LoopsPractice
                 Console.WriteLine();
             }*/
 
-            string[] moviesList = { "MI3", "Shrek", "Avatar", "King Kong", "ET" , "Star Trek" };
+            /*string[] moviesList = { "MI3", "Shrek", "Avatar", "King Kong", "ET" , "Star Trek" };
             
             foreach(string movies in moviesList)
             {
@@ -304,7 +304,18 @@ namespace LoopsPractice
                 {
                     Console.WriteLine(movies);
                 }
+
+            }*/
+            
+            Console.WriteLine("Please enter a number (whole number).");
+            int userNumb = int.Parse(Console.ReadLine());
+            while(userNumb % 3 != 0)
+            {
+                Console.WriteLine("You lost!");
+                Console.WriteLine("Please enter another number.");
+                userNumb = int.Parse(Console.ReadLine());
             }
+            Console.WriteLine("You WON!");
 
         }
     }
