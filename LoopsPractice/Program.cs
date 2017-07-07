@@ -256,7 +256,7 @@ namespace LoopsPractice
             }
             Console.WriteLine(vowelCount);*/
 
-            Console.WriteLine("Enter a number");
+            /*Console.WriteLine("Enter a number");
             int n = int.Parse(Console.ReadLine());
             Console.WriteLine("How many times should it be repeated?");
             int r = int.Parse(Console.ReadLine());
@@ -264,6 +264,46 @@ namespace LoopsPractice
             for(int i = 0; i < r; i ++)
             {
                 Console.WriteLine(n);
+            }*/
+            /*int multiplicationNum = 1;
+            for(int i = 1; i < 6; i++)
+            {
+                for (int j = 1; j < 6; j++)
+                {
+                    Console.Write(multiplicationNum * j + " ");
+                }
+                multiplicationNum += 1;
+                Console.WriteLine();
+            }*/
+
+            string[] moviesList = { "MI3", "Shrek", "Avatar", "King Kong", "ET" };
+            
+            foreach(string movies in moviesList)
+            {
+                if(movies.StartsWith("A"))
+                {
+                    continue;
+                }
+                else if (movies.StartsWith("E"))
+                {
+                    continue;
+                }
+                else if (movies.StartsWith("I"))
+                {
+                    continue;
+                }
+                else if (movies.StartsWith("O"))
+                {
+                    continue;
+                }
+                if (movies.StartsWith("U"))
+                {
+                    continue;
+                }
+                else
+                {
+                    Console.WriteLine(movies);
+                }
             }
 
         }
