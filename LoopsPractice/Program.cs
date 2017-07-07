@@ -306,8 +306,8 @@ namespace LoopsPractice
                 }
 
             }*/
-            
-            Console.WriteLine("Please enter a number (whole number).");
+
+            /*Console.WriteLine("Please enter a number (whole number).");
             int userNumb = int.Parse(Console.ReadLine());
             while(userNumb % 3 != 0)
             {
@@ -315,7 +315,50 @@ namespace LoopsPractice
                 Console.WriteLine("Please enter another number.");
                 userNumb = int.Parse(Console.ReadLine());
             }
-            Console.WriteLine("You WON!");
+            Console.WriteLine("You WON!");*/
+
+            //Write a console app that asks the user for a word or phrase.
+            //then print the number of each vowel in that word/phrase to the console.
+            //Ouput: "Your phrase has ________ A's" etc
+
+            /*Console.WriteLine("Please enter a word or phrase.");
+            string phrase = Console.ReadLine().ToLower();
+            int letterA = 0;
+            int letterE = 0;
+            int letterO = 0;
+            int letterI = 0;
+            int letterU = 0;
+
+            foreach (char letters in phrase)
+            {
+                if (letters == 'a')
+                {
+                    letterA += 1;
+                }
+                if (letters == 'e')
+                {
+                    letterE += 1;
+                }
+                if (letters == 'i')
+                {
+                    letterI += 1;
+                }
+                if (letters == 'o')
+                {
+                    letterO += 1;
+                }
+                if (letters == 'u')
+                {
+                    letterU += 1;
+                }
+                Console.WriteLine("Your phrase has " + letterA + "'s");
+            }*/
+
+            //Ramdom object
+            Random randomNumber = new Random();
+            int randy = randomNumber.Next(0, 9);
+            //or
+            Console.WriteLine(randomNumber.Next(0, 12));
 
         }
     }
