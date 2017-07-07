@@ -276,7 +276,7 @@ namespace LoopsPractice
                 Console.WriteLine();
             }*/
 
-            string[] moviesList = { "MI3", "Shrek", "Avatar", "King Kong", "ET" };
+            string[] moviesList = { "MI3", "Shrek", "Avatar", "King Kong", "ET" , "Star Trek" };
             
             foreach(string movies in moviesList)
             {
